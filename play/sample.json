@@ -1,0 +1,19 @@
+{
+  "main_url": "https://www.example.com",
+  "user_name": "user1",
+  "user_password": "password",
+  "temporary_dir": "/path/to/temp",
+  "working_dir": "/path/to/work",
+  "old_layout": {
+    "xx":   "126",
+    "yy":   "97",
+    "wid":  "1306",
+    "hei":  "973"
+  },
+  "new_layout": {
+    "xx":   "4",
+    "yy":   "149",
+    "wid":  "1552",
+    "hei":  "871"
+  }
+}

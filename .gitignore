@@ -1,0 +1,7 @@
+*.pyc
+*.zip
+*.tar.gz
+*.jar
+chromedriver
+geckodriver
+env.json

@@ -1,0 +1,74 @@
+new-session -s record; 
+
+send bash
+Space byobu_methods.sh
+Space start_server
+Enter;
+
+split-window -v;
+split-window -v;
+
+send zsh
+Enter;
+
+send zsh
+Space zsh_methods.sh
+Space check_encoding
+Enter;
+
+split-window -h;
+
+send bash
+Space byobu_methods.sh
+Space playing
+Enter;
+
+select-pane -t:.0;
+split-window -v;
+
+send bash
+Space byobu_methods.sh
+Space check_odd
+Enter;
+
+split-window -h;
+
+send bash
+Space byobu_methods.sh
+Space check_even
+Enter;
+
+
+select-pane -t:.3;
+split-window -v;
+
+send bash
+Space byobu_methods.sh
+Space check_recording_proc
+Enter;
+
+select-pane -t:.3;
+split-window -h;
+
+send zsh
+Enter;
+
+send zsh
+Space zsh_methods.sh
+Space check_recording
+Enter;
+
+split-window -h;
+
+send bash
+Space byobu_methods.sh
+Space check_temp_dirs
+Enter;
+
+select-pane -t:.3;
+
+send bash
+Space byobu_methods.sh
+Space check_encoding_proc
+Enter;
+

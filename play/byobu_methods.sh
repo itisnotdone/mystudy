@@ -56,7 +56,7 @@ function check_recording_proc {
 
 function playing() {
   sleep 2
-  DISPLAY=:0 python play.py
+  DISPLAY=:0 SKIP=True python play.py
 }
 
 $1

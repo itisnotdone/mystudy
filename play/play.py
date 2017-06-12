@@ -260,14 +260,17 @@ def keep_recording():
         else:
             print 'Invalid input was entered.'
 
-skip = False
+if os.environ['SKIP']:
+    skip = eval(os.environ['SKIP'])
+else:
+    skip = False
 
 while True:
     if not skip:
         keep_recording()
         embed(globals(), locals())
 
-    if keeping:
+    if keeping or skip:
         driver.get(env['main_url'].encode('utf-8') + "/library/bookmarks")
         bookmarks_list = get_element(By.XPATH, '//*[@id="ps-main"]/div/main/div/div[2]/div[1]/table/tbody')
 

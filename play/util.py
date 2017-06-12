@@ -60,8 +60,4 @@ def string_handler(string):
     result = re.sub('&', '_and_', result)
     return result
 
-#driver.maximize_window()
-#driver.set_window_position(1,294)
-#driver.set_window_size(1860,1056)
-
 #other = { 'xx': '12', 'yy': '450', 'wid': '1482', 'hei': '820' }   # other

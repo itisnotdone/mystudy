@@ -76,6 +76,9 @@ def terminate_recording(proc, file):
 with open('env.json') as data_file:
     env = json.load(data_file)
 
+driver.set_window_size(800,800)
+driver.set_window_position(0,0)
+driver.maximize_window()
 
 driver.get(env['main_url'].encode('utf-8') + "/id?redirectTo=/")
 print 'Logging..'
